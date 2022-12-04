@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../assets/cssbootstrap/bootstrap.min.css">
+    <script type="text/javascript" src="../assets/jsbootstrap/bootstrap.min.js "></script>
+</head>
+<body>
+<header class="container-fluid bg-primary d-flex justify-content-center col-12" >
+    <div class="h1">
+        <a class="text-light font-italic m-2" href="indexbootstrap.html">OnlineLearning
+        </a>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-2">
+                    <li class="nav-item">
+                      <a class="btn-light text-dark btn-outline-primary text-light m-3 p-2 rounded" href="iniciarsesion.html">Iniciar sesion</a>
+                    </li>
+                 </ul>
+            </div>
+        </div>
+      </nav>
+  </header>  
+  <div class="contaiener-fluid bg-info col-12">
+    <div class="container p-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Registrarse</div>
+    
+                    <div class="card-body">
+                        <form method="POST" action="{{ route('register') }}">
+                            <div class="row mb-3">
+                                <label for="nombres" class="col-md-4 col-form-label text-md-end">Nombres</label>
+    
+                                <div class="col-md-6">
+                                    <input id="nombres" type="nombres" class="form-control" name="nombres" placeholder="" required autocomplete="nombres">
+    
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong></strong>
+                                        </span>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="apellidos" class="col-md-4 col-form-label text-md-end">Apellidos</label>
+    
+                                <div class="col-md-6">
+                                    <input id="apellidos" type="apellidos" class="form-control" name="apellidos" placeholder="" required autocomplete="apellidos">
+    
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong></strong>
+                                        </span>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="telefono" class="col-md-4 col-form-label text-md-end">Telefono</label>
+    
+                                <div class="col-md-6">
+                                    <input id="telefono" type="telefono" class="form-control" name="telefono" placeholder="" required autocomplete="telefono">
+    
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong></strong>
+                                        </span>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <label for="fecha_nacimiento" class="col-md-4 col-form-label text-md-end">Fecha de telefono</label>
+    
+                                <div class="col-md-6">
+                                    <input id="fecha_nacimiento" type="date" class="form-control" name="fecha_nacimiento" placeholder="" required autocomplete="fecha_nacimiento">
+    
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong></strong>
+                                        </span>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <label for="email" class="col-md-4 col-form-label text-md-end">Correo</label>
+    
+                                <div class="col-md-6">
+                                    <input id="email" type="email" class="form-control" name="email" value="Ej: minombre@gmail.com" required autocomplete="email">
+    
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong></strong>
+                                        </span>
+                                </div>
+                            </div>
+                            
+    
+                            <div class="row mb-3">
+                                <label for="password" class="col-md-4 col-form-label text-md-end">Contraseña</label>
+    
+                                <div class="col-md-6">
+                                    <input id="password" type="password" class="form-control" name="password" required autocomplete="new-password">
+    
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong></strong>
+                                        </span>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <label for="password-confirm" class="col-md-4 col-form-label text-md-end">Confirmar Contrseña</label>
+    
+                                <div class="col-md-6">
+                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                </div>
+                            </div>
+    
+                            <div class="row mb-0">
+                                <div class="col-md-6 offset-md-4 ">
+                                    <button type="submit" class="btn btn-primary">
+                                        Registrarse
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </div>
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4">
+      <section class="">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5>Redes sociales</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Twitter</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Facebook</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Instagram</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Whatsapp</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+     </div>
+     <div class="justify-content-right p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          <h5>&copy; Todos los derechos reservados</h5>
+     </div>
+ </footer>
+
+<link rel="stylesheet" type="text/css" href="assets/jsbootstrap/bootstrap.min.js">
+</body>
+</html>
